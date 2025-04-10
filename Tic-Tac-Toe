@@ -66,6 +66,8 @@ bool checkWin(const char board[3][3]) {
 		if (board[i][0] == board[i][1] && board[i][1] == board[i][2] && board[i][0] != '-')
 			return true;
 		//check columns
+		if (board[0][i] == board[1][i] && board[1][i] == board[2][i] && board[0][i] != '-')
+			return true;
 
 
 	}
